@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8"/>
     <title>Language Learning Game</title>
     <link rel="stylesheet" href="style.css" />
     <script src="timer.js"></script>
     <script src="game.js"></script>
   </head>
   <body>
-    <span id="timer"></span>
-    <script>CountDownTimer.start("#timer", 10)</script>
+    <h1>Language Learning Game</h1>
+    <div id="game"></div>
+    <script>
+      Game.init("#game");
+    </script>
   </body>
 </html>

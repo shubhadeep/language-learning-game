@@ -6,7 +6,7 @@
   };
 
   window.CountDownTimer = {
-    start: function (selector, timerSeconds) {
+    start: function (selector, timerSeconds, onEnd) {
       var domNode = window.document.querySelector(selector),
           endTimeMS = Date.now() + timerSeconds * 1000,
           secondsLeft = getSecondsLeft(endTimeMS),
@@ -16,6 +16,9 @@
               window.setTimeout(updateCountDown, 1000);
             }
             domNode.innerText = secondsLeft;
+            if (onEnd && (secondsLeft <= 0)) {
+              onEnd();
+            }
           };
 
       domNode.innerText = timerSeconds;
