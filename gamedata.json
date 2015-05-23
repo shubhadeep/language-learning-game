@@ -1,0 +1,32 @@
+{
+  "challenges": [
+    { "question": "一", "answer": ["1", "one"]},
+    { "question": "二", "answer": ["2", "two"]},
+    { "question": "三", "answer": ["3", "three"]},
+    { "question": "四", "answer": ["4", "four"]},
+    { "question": "五", "answer": ["5", "five"]},
+    { "question": "六", "answer": ["6", "six"]},
+    { "question": "七", "answer": ["7", "seven"]},
+    { "question": "八", "answer": ["8", "eight"]},
+    { "question": "九", "answer": ["9", "nine"]},
+    { "question": "十", "answer": ["10", "ten"]},
+    { "question": "的", "answer": ["of", "aim", "really and truly"]},
+    { "question": "是", "answer": ["it is", "be"]},
+    { "question": "不", "answer": ["not", "no"]},
+    { "question": "我", "answer": ["i", "me"]},
+    { "question": "有", "answer": ["have", "be", "exist"]},
+    { "question": "大", "answer": ["big", "great", "huge"]},
+    { "question": "在", "answer": ["at", "in"]},
+    { "question": "人", "answer": ["man", "person", "people"]},
+    { "question": "了", "answer": ["the", "understand", "clear"]},
+    { "question": "中", "answer": ["in", "middle", "amid"]},
+    { "question": "到", "answer": ["to", "until", "up to"]},
+    { "question": "资", "answer": ["capital", "money", "resources"]},
+    { "question": "要", "answer": ["want", "ask", "must"]},
+    { "question": "可", "answer": ["can", "may", "be able to"]},
+    { "question": "以", "answer": ["with", "by", "in order to"]},
+    { "question": "这", "answer": ["this", "these"]},
+    { "question": "个", "answer": ["a", "individual"]},
+    { "question": "你", "answer": ["you"]}
+  ]
+}
