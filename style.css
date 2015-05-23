@@ -6,6 +6,18 @@ body {
 h1 {
   color: #666;
 }
+.question {
+  font-size: 10rem;
+  border: 1px solid #eee;
+  width: 25rem;
+  height: 11rem;
+  margin: 1rem;
+}
+.answer-input {
+  font-size: 8rem;
+  width: 25rem;
+  margin: 1rem;
+}
 #timer { 
   font-family: sans-serif; 
   font-size: 3em; 
@@ -18,5 +30,22 @@ h1 {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  min-height: 10em;
+  min-height: 16em;
+}
+.game-start-button {
+  padding: 1rem;
+}
+.correct-answer-feedback {
+  background-color: green;
+  float: left;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+}
+.incorrect-answer-feedback {
+  background-color: red;
+  float: left;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
 }
