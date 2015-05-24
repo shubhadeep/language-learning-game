@@ -37,15 +37,19 @@ h1 {
 }
 .correct-answer-feedback {
   background-color: green;
+}
+.incorrect-answer-feedback {
+  background-color: red;
+}
+.game-feedback>div {
   float: left;
   width: 0.5em;
   height: 0.5em;
   border-radius: 0.25em;
 }
-.incorrect-answer-feedback {
-  background-color: red;
+.game-feedback>span {
   float: left;
-  width: 0.5em;
-  height: 0.5em;
-  border-radius: 0.25em;
+}
+.learn { 
+  font-size: 3rem;
 }
