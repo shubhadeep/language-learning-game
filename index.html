@@ -11,12 +11,16 @@
   <body>
     <h1>Language Learning Game</h1>
     <div class="game-area">
-      <button id="game-start-button" onclick="window.Game.start(300)">Start</button>
-      <div class="question"></div>
-      <input class="answer-input"/>
-      <div class="learn"></div>
-      <span id="timer"></span>
-      <div class="game-feedback"></div>
+      <div class="col">
+        <div class="question"></div>
+        <input class="answer-input"/>
+        <div class="game-feedback"></div>
+      </div>
+      <div class="col">
+        <div id="timer"></div>
+        <button id="game-start-button" onclick="window.Game.start(900)">Start</button>
+        <div class="learn"></div>
+      </div>
     </div>
     <script>
       Game.init("#game-start-button", ".question", ".answer-input", ".game-feedback", ".learn");

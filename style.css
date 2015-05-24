@@ -1,0 +1,80 @@
+body {
+  background-color: #e9e9e9;
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+.game-area {
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+  padding: 1rem;
+}
+.question, .answer-input {
+  min-height: 7rem;
+  font-size: 6rem;
+  width: 20rem;
+}
+
+.question {
+  background-color: #fffff0;
+}
+
+button {
+  width: 6rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+#timer {
+  font-size: 6rem;
+  color: #ffc0c0;
+  background-color: #ffff0;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 1rem;
+}
+
+.learn>div:last-child {
+  font-weight: bold;
+  font-color: #000;
+  transition: font-weight 1s;
+}
+.learn>div {
+  font-size: 2rem;
+  font-color: #c0c0c0;
+}
+
+.game-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  width: 20rem;
+  margin-top: 1rem;
+}
+.correct-answer-feedback {
+  background-color: #66ff66;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.incorrect-answer-feedback {
+  background-color: #ff6666;
+  height: 0.5rem;
+  width: 0.5rem;
+}
