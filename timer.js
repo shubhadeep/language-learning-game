@@ -2,8 +2,8 @@
   "use strict";
 
   function getSecondsLeft(endTimeMS) {
-    return Math.ceil(window.parseFloat((endTimeMS - Date.now())/1000));
-  };
+    return Math.ceil(window.parseFloat((endTimeMS - Date.now()) / 1000));
+  }
 
   window.CountDownTimer = {
     start: function (selector, timerSeconds, onEnd) {

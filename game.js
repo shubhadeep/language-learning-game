@@ -13,7 +13,7 @@
           },
           disable: function () {
             element.prop("disabled", true);
-          }   
+          }
         };
       })(),
 
@@ -56,7 +56,7 @@
         };
       })(),
 
-      feedbacks = (function (element) {
+      feedbacks = (function () {
         var element;
 
         return {
@@ -65,20 +65,13 @@
           },
           renderFeedback: function (isCorrect) {
             var fDiv = $("<div>"),
-                klass = isCorrect? "correct-answer-feedback": "incorrect-answer-feedback",
-                hintSpan;
+                klass = isCorrect ? "correct-answer-feedback" : "incorrect-answer-feedback";
 
             fDiv.attr("class", klass);
             element.append(fDiv);
           },
           reset: function () {
-            var feedbacks = element.find("div");
-
-            if (feedbacks.length > 0) {
-              for (var i=0; i < feedbacks.length; i++) {
-                feedbackDiv.removeChild(feedbacks[i]);
-              }
-            }
+            element.empty();
           }
         };
       })(),
@@ -127,9 +120,7 @@
       })();
 
   window.Game = (function (startButton, answerInput, questionText, feedbacks, learnArea, timer) {
-    var points = 0,
-        reset = function () {
-          points = 0;
+    var reset = function () {
           startButton.reset();
           answerInput.reset();
           questionText.reset();
@@ -138,10 +129,10 @@
           var code = (e.keyCode ? e.keyCode : e.which),
               answer,
               isCorrect;
-          if (code == 13) { //Enter keycode                        
+          if (code === 13) { //Enter keycode
             e.preventDefault();
             answer = answerInput.getValue();
-            isCorrect = challenge.checkAnswer(answer)
+            isCorrect = challenge.checkAnswer(answer);
             feedbacks.renderFeedback(isCorrect);
             if (!isCorrect) {
               learnArea.renderLearning(challenge.getQuestion(), challenge.getCorrectAnswer());
@@ -152,20 +143,19 @@
 
     return {
       init: function (
-        startBtnSelector, 
-        questionTxtSelector, 
-        answerInputSelector, 
+        startBtnSelector,
+        questionTxtSelector,
+        answerInputSelector,
         feedbackSelector,
         learnSelector) {
-          
           startButton.init($(startBtnSelector));
           questionText.init($(questionTxtSelector));
           answerInput.init($(answerInputSelector), answered);
           feedbacks.init($(feedbackSelector));
           learnArea.init($(learnSelector));
-          
+
           reset();
-          
+
           $.ajax("gamedata.json")
            .done(challenge.init);
       },
@@ -175,15 +165,15 @@
         timer.start("#timer", durationSeconds, reset);
         answerInput.disable();
         startButton.disable();
-        feedbacks.reset()
+        feedbacks.reset();
         challenge.displayNext(questionText, answerInput);
       }
     };
-  })(startButton, 
-     answerInput, 
-     questionText, 
-     feedbacks, 
-     learnArea, 
+  })(startButton,
+     answerInput,
+     questionText,
+     feedbacks,
+     learnArea,
      window.CountDownTimer);
 
 })(window, jQuery);
