@@ -27,6 +27,10 @@
     { "question": "以", "answer": ["with", "by", "in order to"]},
     { "question": "这", "answer": ["this", "these"]},
     { "question": "个", "answer": ["a", "individual"]},
-    { "question": "你", "answer": ["you"]}
+    { "question": "你", "answer": ["you"]},
+    { "question": "会", "answer": ["be able to", "to meet", "association"]},
+    { "question": "好", "answer": ["good", "well"]},
+    { "question": "为", "answer": ["act as", "to be", "to become"]},
+    { "question": "上", "answer": ["on", "upon", "above"]}
   ]
 }
