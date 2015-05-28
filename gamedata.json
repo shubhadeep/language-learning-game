@@ -28,9 +28,15 @@
     { "question": "这", "answer": ["this", "these"]},
     { "question": "个", "answer": ["a", "individual"]},
     { "question": "你", "answer": ["you"]},
-    { "question": "会", "answer": ["be able to", "to meet", "association"]},
+    { "question": "会", "answer": ["be able to", "meet", "association"]},
     { "question": "好", "answer": ["good", "well"]},
     { "question": "为", "answer": ["act as", "to be", "to become"]},
     { "question": "上", "answer": ["on", "upon", "above"]}
+    { "question": "来", "answer": ["to come"]},
+    { "question": "就", "answer": ["at once", "then", "approach", "move towards", "undertake"]},
+    { "question": "学", "answer": ["learn", "study", "science", "-ology"]},
+    { "question": "交", "answer": ["deliver", "turn over", "pay"]},
+    { "question": "也", "answer": ["also", "too"]},
+    { "question": "用", "answer": ["use"]}
   ]
 }
