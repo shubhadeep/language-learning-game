@@ -157,7 +157,8 @@
           reset();
 
           $.ajax("gamedata.json")
-           .done(challenge.init);
+           .done(challenge.init)
+           .fail(function () { console.log("AJAX Fail!" ); console.log(arguments); });
       },
 
       start: function (duration) {
