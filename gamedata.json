@@ -31,7 +31,7 @@
     { "question": "会", "answer": ["be able to", "meet", "association"]},
     { "question": "好", "answer": ["good", "well"]},
     { "question": "为", "answer": ["act as", "to be", "to become"]},
-    { "question": "上", "answer": ["on", "upon", "above"]}
+    { "question": "上", "answer": ["on", "upon", "above"]},
     { "question": "来", "answer": ["to come"]},
     { "question": "就", "answer": ["at once", "then", "approach", "move towards", "undertake"]},
     { "question": "学", "answer": ["learn", "study", "science", "-ology"]},
